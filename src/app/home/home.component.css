@@ -1,0 +1,16 @@
+span.semester-enrty {
+  color: #f1f1f1;
+  margin-left: 34px;
+  padding: 7px 16px;
+  cursor: pointer;
+}
+.semester-bar {
+  background: #e4052c;
+  padding: 9px;
+  margin-left: 51px;
+  border-radius: 4px;
+}
+
+span.semester-enrty.active {
+  border-bottom: 1px solid #f1f1f1;
+}
