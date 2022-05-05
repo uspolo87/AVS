@@ -24,6 +24,7 @@ export class HomeComponent implements OnInit {
         pointHoverBackgroundColor: '#E4042C',
         pointHoverBorderColor: 'rgba(148,159,177,0.8)',
         fill: 'origin',
+        borderWidth: 1,
       },
     ],
     labels: ['January', 'February', 'March', 'April'],
