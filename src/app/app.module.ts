@@ -10,6 +10,8 @@ import { CalnderComponent } from './calnder/calnder.component';
 import { ClassesComponent } from './classes/classes.component';
 import { RulesComponent } from './rules/rules.component';
 
+import { NgChartsModule } from 'ng2-charts';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,13 +20,10 @@ import { RulesComponent } from './rules/rules.component';
     HomeComponent,
     CalnderComponent,
     ClassesComponent,
-    RulesComponent
+    RulesComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, AppRoutingModule, NgChartsModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

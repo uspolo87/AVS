@@ -11,7 +11,7 @@ img.img-fluid.search-icon {
 .navbar-container {
   display: flex;
   justify-content: space-evenly;
-  padding: 34px 0;
+  padding: 20px 0;
 }
 .notification-user-container {
   display: flex;

@@ -5,5 +5,238 @@
 
       <span class="semester-enrty">Semester 2</span>
     </div>
+
+    <div class="performance-graph-container">
+      <div class="row">
+        <h4 class="performance-heading">Analysis on your performance</h4>
+
+        <div class="col-md-8 chart-ng-container">
+          <div class="chart-container">
+            <div class="flex">
+              <div class="flex-item">
+                <div style="display: block">
+                  <canvas
+                    baseChart
+                    width="50"
+                    height="30"
+                    [data]="lineChartData"
+                    [options]="lineChartOptions"
+                    [type]="lineChartType"
+                  ></canvas>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="classes-attened">
+            <p class="classes-atteneded">Classes attended module wise</p>
+            <div class="cards-main-container">
+              <div class="module-class-cards">
+                <p class="attender-number">
+                  <span class="first-card">9</span>/13
+                </p>
+
+                <div class="module-details-box">
+                  <div class="details">
+                    <p class="details-head">CO7221</p>
+                    <span class="details-about">Research Methods</span>
+                  </div>
+                  <div class="arrow-icon">
+                    <img
+                      src="assets/arrow.png"
+                      alt="arrow icon"
+                      class="img-fluid arrow-icon"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <div class="module-class-cards">
+                <p class="attender-number">
+                  <span class="second-card">8</span>/13
+                </p>
+
+                <div class="module-details-box">
+                  <div class="details">
+                    <p class="details-head">CO7221</p>
+                    <span class="details-about">Research Methods</span>
+                  </div>
+                  <div class="arrow-icon">
+                    <img
+                      src="assets/arrow.png"
+                      alt="arrow icon"
+                      class="img-fluid arrow-icon"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <div class="module-class-cards">
+                <p class="attender-number">
+                  <span class="third-card">6</span>/13
+                </p>
+
+                <div class="module-details-box">
+                  <div class="details">
+                    <p class="details-head">CO7221</p>
+                    <span class="details-about">Research Methods</span>
+                  </div>
+                  <div class="arrow-icon">
+                    <img
+                      src="assets/arrow.png"
+                      alt="arrow icon"
+                      class="img-fluid arrow-icon"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <div class="module-class-cards">
+                <p class="attender-number">
+                  <span class="fourth-card">19</span>/13
+                </p>
+
+                <div class="module-details-box">
+                  <div class="details">
+                    <p class="details-head">CO7221</p>
+                    <span class="details-about">Research Methods</span>
+                  </div>
+                  <div class="arrow-icon">
+                    <img
+                      src="assets/arrow.png"
+                      alt="arrow icon"
+                      class="img-fluid arrow-icon"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="classes-container">
+            <div class="upcoming-clases-container">
+              <h4 class="upcoming-clases-heading">Upcoming Clases</h4>
+
+              <div class="class-status">
+                <span class="status-text">Available in</span>
+
+                <div class="online-status">
+                  <p><span class="green-dot"></span> <span>Available</span></p>
+                  <p><span class="orange-dot"></span> <span>Offline</span></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="class-cards-container">
+              <div class="class-dates-container">
+                <p class="class-date">02-02-2022 | Monday</p>
+              </div>
+
+              <div class="main-class-container">
+                <div class="class-card">
+                  <div class="time-container">
+                    <span class="timings">12:00 - 01:00</span>
+                    <span class="timings">1hr</span>
+                  </div>
+
+                  <div class="class-details">
+                    <p class="class-code">C07221</p>
+                    <p class="class-desc">
+                      Research Methods and Theories in HCI
+                    </p>
+
+                    <p class="class-status-card">
+                      <span class="green-dot"></span>
+                      <span class="class-locaion">Teams</span>
+                    </p>
+                    <p class="class-status-card">
+                      <span class="orange-dot"></span>
+                      <span class="class-locaion">Location: Ken Edward</span>
+                    </p>
+                  </div>
+                </div>
+
+                <div class="attending-status-container">
+                  <span class="attedning-text">Are you Attending?</span>
+
+                  <div class="attending-status-buttons">
+                    <button class="btn btn-sm btn-yes">Yes</button>
+                    <button class="btn btn-sm btn-maybe">May be</button>
+                    <button class="btn btn-sm btn-no">No</button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- <div class="main-class-container green-card">
+                <div class="class-card">
+                  <div class="time-container">
+                    <span class="timings">12:00 - 01:00</span>
+                    <span class="timings">1hr</span>
+                  </div>
+
+                  <div class="class-detail green">
+                    <p class="class-code">C07221</p>
+                    <p class="class-desc">
+                      Research Methods and Theories in HCI
+                    </p>
+
+                    <p class="class-status-card">
+                      <span class="green-dot"></span>
+                      <span class="class-locaion">Teams</span>
+                    </p>
+                    <p class="class-status-card">
+                      <span class="orange-dot"></span>
+                      <span class="class-locaion">Location: Ken Edward</span>
+                    </p>
+                  </div>
+                </div>
+
+                <div class="attending-status-container">
+                  <span class="attedning-text">Are you Attending?</span>
+
+                  <div class="attending-status-buttons">
+                    <button class="btn btn-sm btn-yes green">Yes</button>
+                    <button class="btn btn-sm btn-maybe">May be</button>
+                    <button class="btn btn-sm btn-no">No</button>
+                  </div>
+                </div>
+              </div> -->
+            </div>
+          </div>
+
+          <div class="certification-container">
+            <div class="certification-container-text">
+              <p class="certification-head">Self- certification form</p>
+              <p class="certification-desc">
+                Let your Uni know if you have been absent for less than 5 days,
+                fill and submit.
+              </p>
+            </div>
+
+            <button class="download-btn btn btn-md">Download</button>
+          </div>
+
+          <div class="rules-container">
+            <p class="rules-head">Rules better Knowing</p>
+            <p class="rules-desc">
+              <img
+                src="assets/badge.svg"
+                alt="badge"
+                class="img-fluid badge-icon"
+              />
+              <span class="desc-rules">
+                Do not forget to tap your ID between early 15 minutes of your
+                Lecture
+              </span>
+            </p>
+            <div class="redirection-link-container">
+              <span class="redirection-link">Know More</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </div>

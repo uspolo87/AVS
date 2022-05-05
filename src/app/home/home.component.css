@@ -1,16 +1,289 @@
 span.semester-enrty {
   color: #f1f1f1;
   margin-left: 34px;
-  padding: 7px 16px;
+  padding: 4px 16px;
   cursor: pointer;
 }
 .semester-bar {
   background: #e4052c;
-  padding: 9px;
+  padding: 12px 9px;
+  border-radius: 8px;
+}
+.home-container {
   margin-left: 51px;
-  border-radius: 4px;
+}
+
+p.attender-number {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+p.attender-number span {
+  font-size: 25px;
+}
+span.first-card {
+  color: #045ee4;
+}
+
+span.second-card {
+  color: #03856b;
+}
+
+span.third-card {
+  color: #8a9f00;
+}
+
+span.fourth-card {
+  color: #d54404;
 }
 
 span.semester-enrty.active {
   border-bottom: 1px solid #f1f1f1;
+}
+
+.chart-container {
+  background: #fff;
+}
+
+.col-md-9.chart-ng-container {
+  width: 750px;
+  border-radius: 8px;
+  margin-left: 12px;
+}
+h4.performance-heading {
+  margin: 10px 0;
+  font-size: 19px;
+  color: #000000;
+}
+p.classes-atteneded {
+  font-size: 14px;
+  margin: 14px 0;
+}
+
+.module-class-cards {
+  background: #ffffff;
+  margin-right: 13px;
+  border-radius: 8px;
+  padding: 16px;
+  width: 275px;
+}
+
+.cards-main-container {
+  display: flex;
+}
+
+p.details-head {
+  margin-bottom: 0;
+}
+
+.module-details-box {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 33px;
+  align-items: center;
+}
+
+p.details-head {
+  font-size: 10px;
+}
+
+span.details-about {
+  font-size: 10px;
+}
+
+img.img-fluid.arrow-icon {
+  width: 16px;
+}
+
+h4.upcoming-clases-heading {
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.upcoming-clases-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 2px;
+  border-bottom: 1px solid #707070;
+}
+.class-status {
+  display: flex;
+}
+
+span.status-text {
+  font-size: 12px;
+  border-right: 2px solid #e4042c;
+  padding-right: 10px;
+  padding-top: 10px;
+  margin-right: 11px;
+}
+
+.green-dot,
+.orange-dot {
+  width: 9px;
+  height: 9px;
+  display: inline-block;
+  border-radius: 45px;
+  margin-right: 9px;
+}
+
+.green-dot {
+  background: green;
+}
+
+.orange-dot {
+  background: orange;
+}
+
+.online-status p {
+  margin-bottom: -1px;
+  font-size: 11px;
+}
+.classes-container {
+  background: #fff;
+  padding: 12px 5px;
+  border-radius: 8px;
+}
+
+p.class-date {
+  background: #dfdfdf;
+  max-width: 58%;
+  margin: 10px auto;
+  padding: 5px 6px;
+  font-weight: 700;
+  font-size: 13px;
+  text-align: center;
+}
+
+.class-card {
+  display: flex;
+  border-bottom: 1px solid #84b5ff;
+  padding: 13px 0;
+}
+
+.time-container {
+  flex-basis: 127px;
+}
+
+span.timings {
+  font-size: 13px;
+  display: block;
+}
+
+p.class-code {
+  margin-bottom: 2px;
+  font-size: 14px;
+}
+p.class-status-card {
+  margin-bottom: -2px;
+}
+p.class-desc {
+  font-size: 11px;
+  margin-bottom: 2px;
+}
+
+span.class-locaion {
+  font-size: 12px;
+}
+
+button.btn.btn-sm {
+  border: 1px solid #045ee4;
+  margin-right: 10px;
+  font-size: 11px;
+}
+
+button.btn.btn-sm.btn-yes {
+  background: #045ee4;
+  color: #fff;
+}
+
+.attending-status-container {
+  display: flex;
+  align-items: center;
+  padding: 13px 0 5px 0;
+  justify-content: space-around;
+}
+
+span.attedning-text {
+  font-size: 12px;
+}
+
+.main-class-container {
+  border-left: 4px solid #045ee4;
+  padding: 10px 11px;
+  background: #f2f7ff;
+  margin-top: 13px;
+}
+
+.main-class-container.green-card {
+  border-left-color: #03856b;
+  background: #f3f9f7;
+}
+
+.green-card button {
+  border-color: #02856a;
+}
+
+button.btn.btn-sm.btn-yes.green {
+  background: #02856a;
+}
+
+.class-dates-container {
+  margin: 13px 0;
+}
+
+.certification-container {
+  display: flex;
+  background: #fff;
+  border-radius: 8px;
+  margin-top: 15px;
+  padding: 13px 7px 4px 14px;
+}
+
+p.certification-head {
+  font-size: 14px;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+p.certification-desc {
+  font-size: 11px;
+}
+
+button.download-btn.btn.btn-md {
+  align-self: center;
+  background: #e4042c;
+  color: #fff;
+  font-size: 12px;
+}
+
+.rules-container {
+  background: #fff;
+  border-radius: 8px;
+  margin-top: 15px;
+  padding: 13px 7px 4px 14px;
+}
+
+p.rules-head {
+  font-size: 16px;
+  border-bottom: 1px solid #707070;
+  padding-bottom: 6px;
+  padding-left: 10px;
+  font-weight: 500;
+}
+
+span.desc-rules {
+  font-size: 13px;
+  margin-left: 18px;
+}
+
+p.rules-desc {
+  display: flex;
+}
+
+.redirection-link-container {
+  font-size: 12px;
+  text-decoration: underline;
+  color: #e4052c;
+  text-align: right;
 }
