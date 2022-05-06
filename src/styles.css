@@ -2,3 +2,54 @@
 body {
   background: #dfdfdf;
 }
+
+span.semester-enrty {
+  color: #f1f1f1;
+  margin-left: 34px;
+  padding: 4px 16px;
+  cursor: pointer;
+}
+.semester-bar {
+  background: #e4052c;
+  padding: 12px 9px;
+  border-radius: 8px;
+}
+
+span.semester-enrty.active {
+  border-bottom: 1px solid #f1f1f1;
+}
+
+.home-container {
+  margin-left: 51px;
+}
+
+h4.performance-heading {
+  margin: 10px 0;
+  font-size: 17px;
+  color: #000000;
+}
+.green-dot,
+.orange-dot,
+.red-dot {
+  width: 9px;
+  height: 9px;
+  display: inline-block;
+  border-radius: 45px;
+  margin-right: 9px;
+}
+
+.green-dot {
+  background: green;
+}
+
+.orange-dot {
+  background: orange;
+}
+
+.red-dot {
+  background: #e4052c;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
+}
