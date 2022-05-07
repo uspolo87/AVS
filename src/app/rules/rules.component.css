@@ -1,0 +1,75 @@
+h4.performance-heading.rules {
+  margin-left: 15px;
+}
+
+.rules-content-container {
+  display: flex;
+}
+
+.rules-content-section {
+  background: #fff;
+  padding: 18px 32px;
+  border-radius: 8px;
+}
+
+.rules-content-container span {
+  font-size: 14px;
+  margin: 3px 9px 0 0;
+}
+
+p.rules-content-element {
+  font-size: 15px;
+  margin-bottom: 16px;
+}
+
+.rules-content-container:nth-child(1) {
+  border-bottom: 1px solid lightgrey;
+}
+
+p.rules-side-head {
+  color: #e4042c;
+  padding: 13px 12px;
+  font-size: 22px;
+  margin-bottom: 3px;
+}
+
+.forms-download-container {
+  background: #fff;
+  padding: 16px 10px 4px 20px;
+  border-radius: 8px;
+}
+
+p.forms-heading {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.form-section {
+  margin-bottom: 14px;
+}
+
+.forms-declare-section {
+  display: flex;
+}
+
+.forms-declare-section span {
+  font-size: 14px;
+  margin: 4px;
+}
+
+p.forms-content {
+  font-size: 12px;
+  margin-bottom: 5px;
+  margin-left: 19px;
+}
+
+button.download-btn.btn.btn-md {
+  background: #e4052c;
+  color: #fff;
+  margin-left: 18px;
+  font-size: 12px;
+}
+
+.form-section {
+  margin-bottom: 14px;
+}
