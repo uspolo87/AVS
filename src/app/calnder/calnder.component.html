@@ -1,1 +1,22 @@
-<p>calnder works!</p>
+<div class="container">
+  <div class="home-container">
+    <div class="semester-bar">
+      <span class="semester-enrty active">Semester 1</span>
+
+      <span class="semester-enrty">Semester 2</span>
+    </div>
+  </div>
+
+  <div class="modules-section">
+    <h4 class="performance-heading calendar">Status of your activity</h4>
+
+    <div class="calendar-container">
+      <mwl-calendar-week-view
+        [viewDate]="viewDate"
+        [events]="events"
+        [refresh]="refresh"
+      >
+      </mwl-calendar-week-view>
+    </div>
+  </div>
+</div>

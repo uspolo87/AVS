@@ -10,6 +10,9 @@ import { CalnderComponent } from './calnder/calnder.component';
 import { ClassesComponent } from './classes/classes.component';
 import { RulesComponent } from './rules/rules.component';
 
+import { CalendarModule, DateAdapter } from 'angular-calendar';
+import { adapterFactory } from 'angular-calendar/date-adapters/date-fns';
+
 import { NgChartsModule } from 'ng2-charts';
 
 @NgModule({
@@ -22,7 +25,15 @@ import { NgChartsModule } from 'ng2-charts';
     ClassesComponent,
     RulesComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, NgChartsModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    NgChartsModule,
+    CalendarModule.forRoot({
+      provide: DateAdapter,
+      useFactory: adapterFactory,
+    }),
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })
