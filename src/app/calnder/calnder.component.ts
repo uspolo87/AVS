@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit } from '@angular/core';
 import {
   startOfDay,
   endOfDay,
@@ -8,6 +8,10 @@ import {
   isSameDay,
   isSameMonth,
   addHours,
+  setDate,
+  setMinutes,
+  setHours,
+  startOfHour,
 } from 'date-fns';
 
 import {
@@ -26,16 +30,16 @@ import { Subject } from 'rxjs';
 export class CalnderComponent implements OnInit {
   colors: any = {
     red: {
-      primary: '#ad2121',
-      secondary: '#FAE3E3',
+      primary: '#E4042C',
+      secondary: '#E4042C',
     },
     blue: {
-      primary: '#1e90ff',
-      secondary: '#D1E8FF',
+      primary: '#045ee4',
+      secondary: '#045ee4',
     },
-    yellow: {
-      primary: '#e3bc08',
-      secondary: '#FDF1BA',
+    green: {
+      primary: '#02856c',
+      secondary: '#02856c',
     },
   };
 
@@ -43,27 +47,25 @@ export class CalnderComponent implements OnInit {
 
   events: CalendarEvent[] = [
     {
-      start: addHours(new Date(), 2),
-      end: addHours(new Date(), 2),
-      title: 'An event with no end date',
-      color: this.colors.yellow,
+      start: setHours(setMinutes(new Date(), 20), 15),
+      end: setHours(setMinutes(new Date(), 40), 17),
+      title: 'A long event that spans 2 months',
+
+      color: this.colors.red,
     },
+
     {
-      start: addHours(new Date(), 1),
-      end: addHours(new Date(), 1),
+      start: setHours(setMinutes(new Date(2022, 4, 11), 20), 1),
+      end: setHours(setMinutes(new Date(2022, 4, 11), 30), 2),
       title: 'A long event that spans 2 months',
       color: this.colors.blue,
     },
+
     {
-      start: addHours(new Date(), 2),
-      end: addHours(new Date(), 2),
-      title: 'A draggable and resizable event',
-      color: this.colors.yellow,
-      resizable: {
-        beforeStart: true,
-        afterEnd: true,
-      },
-      draggable: true,
+      start: setHours(setMinutes(new Date(2022, 4, 13), 0), 0),
+      end: setHours(setMinutes(new Date(2022, 4, 13), 60), 2),
+      title: 'A long event that spans 2 months',
+      color: this.colors.green,
     },
   ];
 
@@ -72,6 +74,8 @@ export class CalnderComponent implements OnInit {
   ngOnInit(): void {}
 
   view: CalendarView = CalendarView.Month;
+
+  viewDateChange = new EventEmitter<Date>();
 
   CalendarView = CalendarView;
 

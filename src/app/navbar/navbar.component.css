@@ -41,6 +41,7 @@ p.user-name:nth-child(1) {
 }
 img.img-fluid.notification-icon {
   width: 22px;
+  cursor: pointer;
 }
 
 .notification-container.position-relative {

@@ -5,4 +5,30 @@ h4.performance-heading {
   max-width: 90%;
   margin: auto;
   border-radius: 8px;
+  background: #fff;
+  padding-top: 13px;
+}
+
+p.today-date {
+  font-size: 16px;
+  margin: 5px 25px;
+}
+
+.calendar-actions-container {
+  display: flex;
+  justify-content: center;
+  padding: 15px 0;
+}
+
+.left-arrow,
+.right-arrow {
+  color: #e4042c;
+  font-size: 23px;
+}
+
+.calendar-action {
+  border: 1px solid transparent;
+  padding: 8px 13px;
+  height: 44px;
+  background: #dfdfdf;
 }

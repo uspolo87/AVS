@@ -1,0 +1,23 @@
+span.material-symbols-outlined.back-arrow {
+  font-size: 28px;
+  color: #fff;
+  position: absolute;
+  top: 10px;
+  cursor: pointer;
+}
+.inner-container {
+  display: flex;
+  background: #ffe6ea;
+  justify-content: space-around;
+  padding: 29px;
+  border-radius: 8px;
+  margin-top: 18px;
+}
+
+.inner-container span:nth-child(1) {
+  font-size: 32px;
+}
+
+p.notification-info {
+  font-size: 15px;
+}

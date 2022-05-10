@@ -14,6 +14,7 @@ import { CalendarModule, DateAdapter } from 'angular-calendar';
 import { adapterFactory } from 'angular-calendar/date-adapters/date-fns';
 
 import { NgChartsModule } from 'ng2-charts';
+import { NotificationComponent } from './notification/notification.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { NgChartsModule } from 'ng2-charts';
     CalnderComponent,
     ClassesComponent,
     RulesComponent,
+    NotificationComponent,
   ],
   imports: [
     BrowserModule,

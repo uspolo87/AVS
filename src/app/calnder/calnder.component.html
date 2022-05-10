@@ -11,6 +11,31 @@
     <h4 class="performance-heading calendar">Status of your activity</h4>
 
     <div class="calendar-container">
+      <div class="text-center calendar-actions-container">
+        <div
+          class="btn btn-primary calendar-action"
+          mwlCalendarNextView
+          [view]="view"
+          [(viewDate)]="viewDate"
+          (viewDateChange)="viewDateChange.next(viewDate)"
+        >
+          <span class="material-symbols-outlined left-arrow">
+            arrow_back_ios
+          </span>
+        </div>
+        <p class="today-date">{{ viewDate | date }}</p>
+        <div
+          class="btn btn-primary calendar-action"
+          mwlCalendarNextView
+          [view]="view"
+          [(viewDate)]="viewDate"
+          (viewDateChange)="viewDateChange.next(viewDate)"
+        >
+          <span class="material-symbols-outlined right-arrow">
+            arrow_forward_ios
+          </span>
+        </div>
+      </div>
       <mwl-calendar-week-view
         [viewDate]="viewDate"
         [events]="events"
