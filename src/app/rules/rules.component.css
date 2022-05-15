@@ -24,6 +24,27 @@ p.rules-content-element {
 
 .rules-content-container:nth-child(1) {
   border-bottom: 1px solid lightgrey;
+  display: flex;
+}
+
+.rules-content-element.header {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 43px;
+}
+
+p.rules-content-heading {
+  align-self: center;
+  font-size: 23px;
+}
+
+.rules-content-heading span {
+  font-size: 23px;
+  font-weight: bold;
+}
+
+img.img-fluid.rules-img {
+  max-width: 50%;
 }
 
 p.rules-side-head {
@@ -37,6 +58,7 @@ p.rules-side-head {
   background: #fff;
   padding: 16px 10px 4px 20px;
   border-radius: 8px;
+  margin-bottom: 16px;
 }
 
 p.forms-heading {
@@ -72,4 +94,18 @@ button.download-btn.btn.btn-md {
 
 .form-section {
   margin-bottom: 14px;
+}
+
+a.forms-content span {
+  font-size: 13px;
+  vertical-align: middle;
+}
+
+a.forms-content {
+  color: black;
+  font-size: 12px;
+}
+
+p.rules-content-element.bold {
+  font-weight: bold;
 }

@@ -1,5 +1,5 @@
 .modules-section {
-  margin-left: 51px;
+  margin-left: 5px;
 }
 
 .modules-left-nav {
@@ -34,17 +34,24 @@ p.module-class-desc {
 }
 
 .modules-cards {
-  padding: 5px 12px;
+  padding: 5px 12px 5px 18px;
   margin-bottom: 20px;
+  cursor: pointer;
+  position: relative;
+}
+
+.dot {
+  position: absolute;
+  left: 0;
+}
+
+.modules-cards.active .dot {
+  display: none;
 }
 
 .modules-inner-container {
   background: #fff;
-}
-
-.modules-cards:not(.active) {
-  display: flex;
-  padding-left: 1px;
+  border-radius: 8px;
 }
 
 .green-dot,
@@ -68,6 +75,7 @@ h4.performance-heading {
   border: 1px solid #dfdfdf;
   padding: 6px 0;
   border-radius: 8px;
+  max-width: 95%;
 }
 
 span.class-date {

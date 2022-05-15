@@ -12,10 +12,15 @@
 
         <div class="col-md-8 chart-ng-container">
           <div class="chart-container">
+            <span class="attendance-info" *ngIf="attendance < 50"
+              >You have below 50% Attendance</span
+            >
+
             <div class="flex">
               <div class="flex-item">
                 <div style="display: block">
                   <canvas
+                    style="border-radius: 8px"
                     baseChart
                     width="50"
                     height="30"
@@ -158,15 +163,33 @@
                   </div>
                 </div>
 
-                <div class="attending-status-container">
+                <div
+                  class="attending-status-container"
+                  [hidden]="attending || notAttending"
+                >
                   <span class="attedning-text">Are you Attending?</span>
-
                   <div class="attending-status-buttons">
-                    <button class="btn btn-sm btn-yes">Yes</button>
+                    <button
+                      class="btn btn-sm btn-yes"
+                      (click)="markAttendance('yes')"
+                    >
+                      Yes
+                    </button>
                     <button class="btn btn-sm btn-maybe">May be</button>
-                    <button class="btn btn-sm btn-no">No</button>
+                    <button
+                      class="btn btn-sm btn-no"
+                      (click)="markAttendance('')"
+                    >
+                      No
+                    </button>
                   </div>
                 </div>
+                <span *ngIf="attending" class="attendance-confirmation green"
+                  >You're attending this class</span
+                >
+                <span *ngIf="notAttending" class="attendance-confirmation red"
+                  >You're not attending this class</span
+                >
               </div>
 
               <!-- <div class="main-class-container green-card">

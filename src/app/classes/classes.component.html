@@ -17,15 +17,35 @@
             <span class="modules-name">Modules</span>
 
             <div class="modules-cards-container">
-              <div class="modules-cards active">
+              <div
+                class="modules-cards"
+                [ngClass]="{ active: activeClassId === 'C07221' }"
+                (click)="showClasses('C07221')"
+              >
+                <span class="red-dot dot"></span>
+
                 <p class="module-class-id">C07221</p>
                 <p class="module-class-desc">
                   Research Methods and Theroies in HCI
                 </p>
               </div>
 
+              <div
+                class="modules-cards"
+                [ngClass]="{ active: activeClassId === 'C03093' }"
+                (click)="showClasses('C03093')"
+              >
+                <span class="green-dot dot"></span>
+                <div>
+                  <p class="module-class-id">C03093</p>
+                  <p class="module-class-desc">
+                    Research Methods and Theroies in HCI
+                  </p>
+                </div>
+              </div>
+
               <div class="modules-cards">
-                <span class="green-dot"></span>
+                <span class="orange-dot dot"></span>
                 <div>
                   <p class="module-class-id">C07221</p>
                   <p class="module-class-desc">
@@ -35,17 +55,7 @@
               </div>
 
               <div class="modules-cards">
-                <span class="orange-dot"></span>
-                <div>
-                  <p class="module-class-id">C07221</p>
-                  <p class="module-class-desc">
-                    Research Methods and Theroies in HCI
-                  </p>
-                </div>
-              </div>
-
-              <div class="modules-cards">
-                <span class="red-dot"></span>
+                <span class="red-dot dot"></span>
 
                 <div>
                   <p class="module-class-id">C07221</p>
@@ -63,61 +73,18 @@
             <span class="modules-name">Sessions of this modules</span>
 
             <div class="class-container">
-              <div class="class-details-card">
-                <span class="class-date">14-01-2021</span>
+              <div class="class-details-card" *ngFor="let class of classData">
+                <span class="class-date">{{ class.date }}</span>
 
-                <span class="class-count">Class 1</span>
-                <span class="class-topic">Intro to HCI</span>
+                <span class="class-count">{{ class.number }}</span>
+                <span class="class-topic">{{ class.title }}</span>
 
-                <span class="class-status">
+                <span class="class-status" *ngIf="class.status">
                   <span class="material-symbols-outlined green"> check </span>
                   Present</span
                 >
-              </div>
 
-              <div class="class-details-card">
-                <span class="class-date">14-01-2021</span>
-
-                <span class="class-count">Class 1</span>
-                <span class="class-topic">Intro to HCI</span>
-
-                <span class="class-status"
-                  ><span class="material-symbols-outlined red"> close </span>
-                  Absent</span
-                >
-              </div>
-
-              <div class="class-details-card">
-                <span class="class-date">14-01-2021</span>
-
-                <span class="class-count">Class 1</span>
-                <span class="class-topic">Intro to HCI</span>
-
-                <span class="class-status">
-                  <span class="material-symbols-outlined green"> check </span>
-                  Present</span
-                >
-              </div>
-
-              <div class="class-details-card">
-                <span class="class-date">14-01-2021</span>
-
-                <span class="class-count">Class 1</span>
-                <span class="class-topic">Intro to HCI</span>
-
-                <span class="class-status">
-                  <span class="material-symbols-outlined green"> check </span>
-                  Present</span
-                >
-              </div>
-
-              <div class="class-details-card">
-                <span class="class-date">14-01-2021</span>
-
-                <span class="class-count">Class 1</span>
-                <span class="class-topic">Intro to HCI</span>
-
-                <span class="class-status"
+                <span class="class-status" *ngIf="!class.status"
                   ><span class="material-symbols-outlined red"> close </span>
                   Absent</span
                 >

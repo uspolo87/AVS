@@ -5,6 +5,7 @@
 
 body {
   background: #dfdfdf;
+  font-family: muli, sans-serif;
 }
 
 span.semester-enrty {
@@ -24,7 +25,7 @@ span.semester-enrty.active {
 }
 
 .home-container {
-  margin-left: 51px;
+  margin-left: 5px;
 }
 
 h4.performance-heading {
