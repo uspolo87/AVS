@@ -13,39 +13,45 @@
           <div class="sidebar-nav-elements">
             <div class="nav-container">
               <ul class="list-group">
-                <a class="side-bar-nav-element active" routerLink="/">
-                  <img
-                    src="assets/dashboard.png"
-                    alt="dashboard icon"
-                    class="img-fluid sidebar-nav-icons"
-                  />
+                <a
+                  class="side-bar-nav-element"
+                  (click)="setActive('dashboard')"
+                  routerLink="/"
+                  [ngClass]="{ active: activeElement === 'dashboard' }"
+                >
+                  <span class="material-symbols-outlined"> insert_chart </span>
                   Dashboard
                 </a>
 
-                <a class="side-bar-nav-element" routerLink="calendar">
-                  <img
-                    src="assets/calendar.png"
-                    alt="Calendar icon"
-                    class="img-fluid sidebar-nav-icons"
-                  />
+                <a
+                  class="side-bar-nav-element"
+                  (click)="setActive('calendar')"
+                  routerLink="calendar"
+                  [ngClass]="{ active: activeElement === 'calendar' }"
+                >
+                  <span class="material-symbols-outlined">
+                    calendar_month
+                  </span>
                   Calendar
                 </a>
 
-                <a class="side-bar-nav-element" routerLink="module">
-                  <img
-                    src="assets/modules.png"
-                    alt="Modules icon"
-                    class="img-fluid sidebar-nav-icons"
-                  />
+                <a
+                  class="side-bar-nav-element"
+                  (click)="setActive('modules')"
+                  routerLink="module"
+                  [ngClass]="{ active: activeElement === 'modules' }"
+                >
+                  <span class="material-symbols-outlined"> description </span>
                   Modules
                 </a>
 
-                <a class="side-bar-nav-element" routerLink="rules">
-                  <img
-                    src="assets/rules.png"
-                    alt="Rules icon"
-                    class="img-fluid sidebar-nav-icons"
-                  />
+                <a
+                  class="side-bar-nav-element"
+                  (click)="setActive('rules')"
+                  routerLink="rules"
+                  [ngClass]="{ active: activeElement === 'rules' }"
+                >
+                  <span class="material-symbols-outlined"> check_box </span>
                   Rules
                 </a>
               </ul>

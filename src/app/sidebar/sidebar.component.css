@@ -25,7 +25,7 @@ img.img-fluid.logo-img {
   max-width: 140px;
   margin-left: 58px;
 }
-img.img-fluid.sidebar-nav-icons {
+.sidebar-nav-icons {
   width: 45px;
   height: auto;
   padding: 10px 10px;
@@ -39,6 +39,7 @@ a.side-bar-nav-element {
   color: #000000;
   margin-top: 32px;
   cursor: pointer;
+  padding: 7px 10px;
 }
 .logout-bottom-container {
   margin: 0px 0px 52px 53px;
@@ -50,4 +51,10 @@ a.side-bar-nav-element.active {
   border-left: 4px solid #e4052c;
   color: #e4052c;
   border-radius: 0 3px 4px 0px;
+}
+
+a.side-bar-nav-element span {
+  padding: 7px;
+  vertical-align: middle;
+  font-size: 30px;
 }

@@ -252,7 +252,7 @@ p.certification-desc {
   font-size: 11px;
 }
 
-button.download-btn.btn.btn-md {
+a.download-btn.btn.btn-md {
   align-self: center;
   background: #e4042c;
   color: #fff;
@@ -308,4 +308,12 @@ span.attendance-confirmation.red {
 
 span.attendance-confirmation.green {
   color: #008001;
+}
+
+.class-locaion a {
+  color: #000000;
+}
+
+.class-locaion a:hover {
+  color: #045ee4;
 }

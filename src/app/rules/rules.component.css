@@ -19,7 +19,7 @@ h4.performance-heading.rules {
 
 p.rules-content-element {
   font-size: 15px;
-  margin-bottom: 16px;
+  margin-bottom: 8px;
 }
 
 .rules-content-container:nth-child(1) {
@@ -108,4 +108,12 @@ a.forms-content {
 
 p.rules-content-element.bold {
   font-weight: bold;
+}
+
+.forms-content a {
+  color: #000000;
+}
+
+.forms-content a:hover {
+  color: #045ee4;
 }

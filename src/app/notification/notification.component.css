@@ -7,17 +7,26 @@ span.material-symbols-outlined.back-arrow {
 }
 .inner-container {
   display: flex;
-  background: #ffe6ea;
-  justify-content: space-around;
-  padding: 29px;
+  background: #fff;
+  justify-content: space-between;
+  padding: 20px;
   border-radius: 8px;
-  margin-top: 18px;
+  max-width: 76%;
+  margin: 23px auto;
+}
+.inner-container:last-child {
+  background-color: #f1f1f1;
 }
 
 .inner-container span:nth-child(1) {
   font-size: 32px;
+  color: green;
 }
 
 p.notification-info {
-  font-size: 15px;
+  font-size: 14px;
+}
+
+span.time {
+  font-size: 12px;
 }
